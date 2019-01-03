@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>星空案例</title>
+		<style type="text/css">
+			body,html{
+				height: 100%;
+				background: url(images/xk.jpg) no-repeat;
+				background-size: cover;
+			}
+			.wrap{
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				transform-style: preserve-3d;
+			}
+			.box01{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				transform-style: preserve-3d;
+				animation: go 8s linear infinite}
+			.circle span{
+				width: 300px;
+				height: 300px;
+				border: 1px solid #000000;
+				position: absolute;
+				border-radius: 50%;
+				left: 0;
+				top: 0;
+				box-shadow: 0px 0px 30px rgba(5,1,1,0.5);
+			}	
+			.circle span:nth-child(2){
+				transform: rotateX(40deg);
+			}
+			.circle span:nth-child(3){
+				transform: rotateX(80deg);
+			}
+			.circle span:nth-child(4){
+				transform: rotateX(120deg);
+			}
+			.circle span:nth-child(5){
+				transform: rotateX(1600deg);
+			}
+			.circle span:nth-child(6){
+				transform: rotateX(200deg);
+			}
+			.circle span:nth-child(7){
+				transform: rotateX(240deg);
+			}
+			.circle span:nth-child(8){
+				transform: rotateX(280deg);
+			}
+			.circle span:nth-child(9){
+				transform: rotateX(320deg);
+			}
+			.circle span:nth-child(11){
+				transform: rotateY(40deg);
+			}
+			.circle span:nth-child(12){
+				transform: rotateY(80deg);
+			}
+			.circle span:nth-child(13){
+				transform: rotateY(120deg);
+			}
+			.circle span:nth-child(14){
+				transform: rotateY(160deg);
+			}
+			.circle span:nth-child(15){
+				transform: rotateY(200deg);
+			}
+			.circle span:nth-child(16){
+				transform: rotateY(240deg);
+			}
+			.circle span:nth-child(17){
+				transform: rotateY(280deg);
+			}
+			.circle span:nth-child(18){
+				transform: rotateY(320deg);
+			}
+			.box02{
+				width: 450px;
+				height: 450px;
+				position: absolute;
+				left: 50%;
+				top:50%;
+				transform: translate(-50%,-50%) rotateX(36deg) rotateY(-21deg);
+				transform-style: preserve-3d;
+				border: 5px solid #000000;
+				border-radius: 50%;
+				box-shadow: 0px 0px 40px #981515;
+				animation: gogogo 3s linear infinite;
+			}
+			.box02 span{
+				width: 50px;
+				height: 50px;
+				border: 1px solid #981515;
+				position: absolute;
+				left:82px ;
+				top: 391px;
+			}
+			@keyframes gogogo{
+					0%{
+			transform: translate(-50%,-50%) rotateX(36deg) rotateY(-21deg) rotateZ(0deg);	
+					}
+					100%{
+					transform: translate(-50%,-50%) rotateX(36deg) rotateY(-21deg) rotateZ(360deg);	
+					}
+				}	
+			.box03{
+				width: 700px;
+				height: 700px;
+				position: absolute;
+				left: 50%;
+				top:50%;
+				transform: translate(-50%,-50%) rotateX(72deg) rotateY(41deg);
+				transform-style: preserve-3d;
+				border: 5px solid #000000;
+				border-radius: 50%;
+				box-shadow: 0px 0px 40px purple;
+				animation: gogo 8s linear infinite;
+			}
+			.box03 span{
+				width: 100px;
+				height: 100px;
+				border: 1px solid purple;
+				position: absolute;
+				left:-40px ;
+				top: 366px;
+			}	
+			@keyframes gogo{
+					0%{
+			transform: translate(-50%,-50%) rotateX(72deg) rotateY(41deg) rotateZ(0deg);	
+					}
+					100%{
+					transform: translate(-50%,-50%) rotateX(72deg) rotateY(41deg) rotateZ(360deg);	
+					}
+				}
+			.box04{
+				width: 900px;
+				height: 900px;
+				position: absolute;
+				left: 50%;
+				top:50%;
+				transform: translate(-50%,-50%) rotateX(120deg) rotateY(147deg);
+				transform-style: preserve-3d;
+				border: 5px solid #000000;
+				border-radius: 50%;
+				box-shadow: 0px 0px 40px blue;
+				animation: go 12s linear infinite;
+			}
+			
+			.box04 span{
+				width: 150px;
+				height: 150px;
+				border: 1px solid blue;
+				position: absolute;
+				left:-31px ;
+				top: 543px;
+			}			
+				@keyframes go{
+					0%{
+			transform: translate(-50%,-50%) rotateX(120deg) rotateY(147deg) rotateZ(0deg);	
+					}
+					100%{
+					transform: translate(-50%,-50%) rotateX(120deg) rotateY(147deg) rotateZ(360deg);	
+					}
+				}
+				
+				
+			
+				
+				
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box01 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>	
+			<div class="box02 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>	
+			<div class="box03 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>	
+			<div class="box04 circle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>	
+		</div>
+	</body>
+</html>
